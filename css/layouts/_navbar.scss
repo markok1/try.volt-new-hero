@@ -1,0 +1,17 @@
+.navbar {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  .logo {
+    svg {
+      width: 123px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 13px 0px;
+    .space-between {
+      justify-content: center;
+    }
+  }
+}

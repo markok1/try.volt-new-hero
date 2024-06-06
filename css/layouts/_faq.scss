@@ -1,0 +1,106 @@
+.faq-section {
+  .wrapper {
+    padding-top: 72px;
+    padding-bottom: 80px;
+  }
+
+  .still-have-question {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 48px;
+  }
+
+  .questions {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    .qa-item {
+      border: 1px solid #e9e9e9;
+      border-radius: 4px;
+      background-color: #fff;
+      transition: background-color 0.15;
+      padding: 15px;
+      margin-bottom: 7px;
+      cursor: pointer;
+
+      @media (max-width: 576px) {
+        padding: 15px 20px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &.opened,
+      &:hover {
+        background-color: #f6f8f8;
+      }
+
+      &.opened {
+        .chevron {
+          transform: rotate(180deg);
+          transition: all 0.15s ease-in;
+        }
+      }
+
+      .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        position: relative;
+        font-family: $genralsans;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 130%;
+        .chevron {
+          transition: all 0.15s ease-in;
+        }
+      }
+
+      .answer {
+        display: none;
+        color: #585b5f;
+        padding-top: 6px;
+        max-width: 640px;
+        p {
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq-section .wrapper{
+    padding-top: 49px;
+    padding-bottom: 48px;
+  }
+  .faq-section h2{
+    margin-bottom: 32px;
+  }
+  .faq-section .questions .qa-item{
+    padding: 18px 15px;
+  }
+  .faq-section .questions .qa-item .question{
+    font-size: 16px;
+  }
+  .faq-section .questions .qa-item .question .chevron{
+    min-width: 25px;
+    margin-left: 10px;
+  }
+  .faq-section .questions .qa-item .answer{
+    font-size: 14px;
+  }
+  .faq-section .still-have-question{
+    font-size: 14px;
+  }
+}

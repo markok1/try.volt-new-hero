@@ -1,0 +1,68 @@
+.how-we-compare {
+  background-color: #f4f5fb;
+  padding-top: 72px;
+  padding-bottom: 80px;
+  text-align: center;
+  min-height: 688px;
+  .table {
+    margin: auto;
+    margin-top: 40px;
+  }
+  .comper-tags {
+    display: inline-flex;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1.5px solid #3454da;
+    background: #fff;
+    margin: auto;
+    margin-top: 47px;
+    a {
+      color: #202122;
+      font-family: "General Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 23.4px */
+      text-transform: capitalize;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 358px;
+      min-height: 34px;
+    }
+    .activetab {
+      background: #3454da;
+      color: #fff;
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .how-we-compare .comper-tags{
+    width: 100%;
+  }
+  .how-we-compare .comper-tags a{
+    max-width: 100%;
+    width: 100%;
+    min-width: unset;;
+  }
+  .how-we-compare{
+    padding-top: 43px;
+  }
+  .how-we-compare .comper-tags{
+    margin-top: 33px;
+  }
+  .how-we-compare .comper-tags a{
+    font-size: 14px;
+  }
+  .how-we-compare .table{
+    margin-top: 32px;
+  }
+  .how-we-compare{
+    min-height: unset;
+    padding-bottom: 25px;
+  }
+}

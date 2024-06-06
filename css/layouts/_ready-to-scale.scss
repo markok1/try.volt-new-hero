@@ -1,0 +1,68 @@
+.ready-to-scale {
+  min-height: 384px;
+  background: url("../img/cta.webp") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  overflow: hidden;
+  .wrapper {
+    position: relative;
+    .herophones {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .left {
+    max-width: 360px;
+    text-align: center;
+    margin-left: 85px;
+    h2 {
+      margin-bottom: 14px;
+    }
+    .btnplace {
+      text-align: center;
+      margin-top: 23px;
+      .primary-button {
+        display: inline-flex;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ready-to-scale .left {
+    margin-left: 0;
+  }
+  .ready-to-scale .wrapper .herophones {
+    right: -100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ready-to-scale {
+    overflow: hidden;
+  }
+  .ready-to-scale .wrapper .herophones {
+    position: relative;
+    top: unset;
+    right: unset;
+    transform: unset;
+    width: 420px;
+    max-width: unset;
+    margin-left: 50%;
+    transform: translateX(calc(-50% + 20px));
+    margin-top: 15px;
+  }
+  .ready-to-scale .left {
+    margin: 0;
+    max-width: 100%;
+  }
+  .ready-to-scale {
+    padding-top: 50px;
+    padding-bottom: 28px;
+  }
+}

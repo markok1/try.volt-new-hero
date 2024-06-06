@@ -1,0 +1,49 @@
+.number-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+}
+.numbers-box {
+  display: flex;
+  align-items: center;
+
+  max-width: 230px;
+  width: 100%;
+
+  padding: 8px 15px;
+  gap: 10px;
+
+  border-radius: 8px;
+  background: #f4f5fb;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    p {
+      color: #202122;
+    }
+  }
+  svg {
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .number-boxes {
+    gap: 16px;
+  }
+  .numbers-box {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .numbers-box{
+    max-width: calc(50% - 12px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .numbers-box{
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,107 @@
+.voolt-marketing {
+  background: var(--color-gray-bg, #f4f5fb);
+  .wrapper {
+    padding-top: 64px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+.marketing-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 731px;
+  margin: auto;
+}
+.marketing-holder {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.marketing-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.marketing-box {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  max-width: 510px;
+  width: 100%;
+
+  gap: 8px;
+  padding: 16px;
+
+  border-radius: 8px;
+  background: #fff;
+}
+.marketing-box-top {
+  display: flex;
+  gap: 10px;
+}
+.marketing-right {
+  .picture-frame {
+    max-width: 590px;
+    background: radial-gradient(458.68% 104.14% at -7.88% 119.34%, rgba(255, 210, 10, 0.14) 0%, rgba(255, 210, 10, 0) 100%), radial-gradient(421.3% 73.41% at -6.23% -29.87%, rgba(128, 0, 255, 0.14) 0%, rgba(128, 0, 255, 0) 100%), radial-gradient(460.8% 118.31% at 102.31% 106.71%, rgba(0, 148, 255, 0.11) 0%, rgba(0, 148, 255, 0) 100%), #f6f7f9;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    .white-space {
+      padding: 12px;
+      .dots {
+        padding-left: 14px;
+      }
+    }
+    img {
+      border-radius: 16px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .marketing-holder {
+    flex-direction: column;
+  }
+  .marketing-box {
+    max-width: 590px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .voolt-marketing {
+    .wrapper {
+      padding-top: 48px;
+      padding-bottom: 31px;
+      gap: 31px;
+    }
+  }
+  .marketing-top {
+    .text-m {
+      text-align: center;
+    }
+  }
+  .marketing-box-top {
+    img {
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+  }
+  .marketing-right .picture-frame {
+    border-radius: 14px;
+    padding: 14px;
+    .white-space {
+      padding: 10px;
+      border-radius: 12px;
+    }
+    img {
+      max-height: 660px;
+    }
+  }
+  .marketing-left {
+    gap: 16px;
+  }
+  .marketing-holder {
+    gap: 31px;
+  }
+}

@@ -1,0 +1,66 @@
+.voolt-by-numbers {
+  .wrapper {
+    padding-top: 72px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+.numbers-left {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 484px;
+  width: 100%;
+  gap: 32px;
+  padding-top: 30px;
+  margin-left: 45px;
+  h2 {
+    text-align: left;
+  }
+}
+.numbers-right {
+  a {
+    display: flex;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .voolt-by-numbers .wrapper{
+    flex-direction: column;
+    // text-align: center;
+  }
+  .numbers-left{
+    max-width: 100%;
+    margin: 0;
+  }
+  .numbers-right a{
+    display: inline-flex;
+  }
+  .numbers-left{
+    padding-top: 0;
+  }
+  .numbers-right{
+    text-align: center;
+  }
+  .numbers-left h2{
+    text-align: center;
+  }
+  .voolt-by-numbers .wrapper{
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .voolt-by-numbers .wrapper{
+    padding-top: 48px;
+    gap: 20px;
+  }
+  .numbers-left{
+    gap: 24px;
+  }
+  .numbers-right a{
+    max-width: 290px;
+  }
+}

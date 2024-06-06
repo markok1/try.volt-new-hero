@@ -1,0 +1,174 @@
+h1 {
+  font-family: $genralsans;
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  text-transform: capitalize;
+}
+h2 {
+  font-family: $genralsans;
+  color: #202122;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 33.6px */
+  text-transform: capitalize;
+}
+h3 {
+  font-family: $genralsans;
+  color: #202122;
+  font-family: "General Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.subtitle2 {
+  color: #202122;
+  text-align: center;
+  font-family: $genralsans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 33.6px */
+  text-transform: capitalize;
+}
+.text-xl--medium {
+  font-family: $genralsans;
+  color: #0594fa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+.text-xl {
+  font-family: $genralsans;
+  color: #0594fa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+.text-xl--slim {
+  font-family: $genralsans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+  text-transform: capitalize;
+}
+.text-l--bold {
+  font-family: $genralsans;
+  color: #202122;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+  text-transform: capitalize;
+}
+.text-l {
+  font-family: $genralsans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+  text-transform: capitalize;
+}
+.text-l-th {
+  font-family: $genralsans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  text-transform: capitalize;
+  color: var(--black, #242424);
+}
+.text-m--bold {
+  font-family: $genralsans;
+  color: #202122;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+.text-m--semibold {
+  font-family: $genralsans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+}
+.text-m {
+  font-family: $genralsans;
+  color: #202122;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.text-s--bold {
+  font-family: $genralsans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.text-s--semibold {
+  font-family: $genralsans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.text-s {
+  font-family: $genralsans;
+  color: #202122;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+
+.text-xs {
+  font-family: $genralsans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 120%; /* 30px */
+  }
+  h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 33.6px */
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.color-white {
+  color: #fff;
+}
+.color-gray {
+  color: #d9d9d9;
+}
+.color-blue{
+  color: #0594FA;
+}
+.align-center {
+  text-align: center;
+}

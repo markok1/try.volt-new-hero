@@ -1,0 +1,63 @@
+.made-for-service {
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    width: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    content: " ";
+    z-index: 9;
+    position: absolute;
+    background: rgb(12, 53, 106);
+    background: linear-gradient(90deg, rgba(12, 53, 106, 1) 0%, rgba(0, 36, 255, 0) 100%);
+  }
+  &:after {
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: " ";
+    position: absolute;
+    background: rgb(45, 109, 191);
+    background: linear-gradient(-90deg, rgba(45, 109, 191, 1) 0%, rgba(0, 36, 255, 0) 100%);
+  }
+  .service-tag-slider {
+    width: 200vw;
+    margin-left: -100vw;
+  }
+}
+
+.servicetag {
+  border-radius: 4px;
+  border: 1px solid #3454da;
+  background: #fff;
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #3454da;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .made-for-service {
+    padding-top: 8px;
+    .subtitle2 {
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+  .servicetag {
+    min-height: 22px;
+    font-size: 9px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
